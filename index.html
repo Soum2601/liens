@@ -2,18 +2,14 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>
-:root{ color-scheme:light; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
-html{ -webkit-text-size-adjust:100%; }
-img{ max-width:100%; }
-[hidden]{ display:none !important; }
-</style>
-<title>objectif.falah — liens</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Liens objectif.falah</title>
+<style>:root{box-sizing:border-box}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
 <style>
 /*
-  Layout : une colonne centrée, type "page de liens" — portrait en tête,
+  Layout : une colonne centrée, type "page de liens", portrait en tête,
   puis une liste de cartes-liens avec une illustration aquarelle à gauche
   de chaque titre. Les illustrations reprennent le moodboard (arche,
   coquillage, plume, boussole, porte) plutôt que les couvertures des
@@ -136,7 +132,7 @@ body{
   isolation:isolate;
   transition:transform 0.2s ease, box-shadow 0.2s ease;
 }
-/* cadre précieux animé — sable chaud + periwinkle (aucun doré, charte respectée) */
+/* cadre précieux animé, sable chaud + periwinkle (aucun doré, charte respectée) */
 .link-card::before{
   content:"";
   position:absolute;
@@ -294,8 +290,35 @@ footer p{ margin:0; }
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+
+<style>
+.quiz{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px}
+.quiz,#quiz-open{border:2px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,var(--accent) 0%,var(--periwinkle) 45%,var(--accent) 100%) border-box}
+#quiz-open{color:var(--accent);font-weight:600;text-align:center}
+a.dm-btn{display:flex;align-items:center;justify-content:center;gap:10px}
+a.dm-btn svg{width:20px;height:20px;flex:none}
+.links{margin-top:16px}
+[hidden]{display:none!important}
+.quiz-title{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:1.3rem;color:var(--accent);margin:0}
+.quiz-sub{margin:0;font-size:0.84rem;color:var(--ink-soft);line-height:1.4}
+.quiz-step{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-soft);margin:0}
+.quiz-q{margin:0;font-weight:600;font-size:1rem;line-height:1.35}
+.quiz-opts{display:flex;flex-direction:column;gap:8px}
+.btn{font:inherit;cursor:pointer;border-radius:14px;padding:12px 14px;text-align:left;border:1px solid var(--border);background:var(--bg);color:var(--ink);font-size:0.92rem;line-height:1.3;min-height:44px;text-decoration:none;display:block}
+.btn:hover,.btn:focus-visible{border-color:var(--accent);outline:none}
+.btn.primary{background:var(--accent);color:#FAF6EF;border-color:var(--accent);text-align:center;font-weight:600}
+.btn.primary:hover,.btn.primary:focus-visible{opacity:0.92}
+.btn.ghost{text-align:center}
+.quiz-actions{display:flex;flex-direction:column;gap:8px}
+.quiz-result-title{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:1.25rem;color:var(--accent);margin:0}
+.quiz-result p{margin:0;font-size:0.9rem;line-height:1.5;color:var(--ink)}
+.quiz-note{font-size:0.76rem;color:var(--ink-soft);margin:0}
+.quiz-restart{background:none;border:none;font:inherit;font-size:0.8rem;color:var(--ink-soft);text-decoration:underline;cursor:pointer;align-self:flex-start;padding:4px 0}
+.gift{margin:0;font-size:0.82rem;line-height:1.45;color:var(--ink-soft);padding:0 4px;text-align:center}
+.gift strong{color:var(--accent);font-weight:600}
+.dm-btn{display:block;text-align:center;text-decoration:none;color:var(--accent);font-weight:600;font-size:0.95rem;padding:14px;border-radius:16px;border:1.5px solid var(--accent);background:var(--surface);min-height:48px}
+.dm-btn:hover,.dm-btn:focus-visible{background:var(--accent);color:#FAF6EF;outline:none}
+</style>
 <div class="page">
 
   <div class="profile">
@@ -307,84 +330,115 @@ footer p{ margin:0; }
 
   <nav class="links" aria-label="Mes liens">
 
-    <p class="category">Business</p>
-    <p class="category-sub">Ambition, foi et entrepreneuriat.</p>
-
     <a class="link-card featured" data-link-id="dmo" href="https://www.joharalamarty.com/dmoformation?sa=sa0270402567107c52bf3362c98c05093eec95329a" target="_blank" rel="noopener">
       <span class="link-art" aria-hidden="true">
         <svg viewBox="0 0 48 48"><path d="M16 10 L32 10 L40 20 L24 40 L8 20 Z" fill="var(--sand)" opacity="0.4" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 20 L40 20 M16 10 L24 40 L32 10" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.6"/></svg>
       </span>
       <span class="link-text">
-        <span class="link-title">La DMO — Johara Lamarty</span>
+        <span class="link-title">La DMO, par Johara Lamarty</span>
         <span class="link-sub">Développer son mindset d'entrepreneuse musulmane et construire un business aligné avec ses valeurs.</span>
       </span>
     </a>
+    <p class="gift">Lien affilié : si tu rejoins la DMO via ce lien, je recevrai une commission, sans frais supplémentaires pour toi. Merci à toi !</p>
 
-    <div class="link-card group-card">
-      <p class="group-title">Les e-books best-sellers de Sonia</p>
-      <a class="group-row" href="https://stan.store/affiliates/fc1fed01-0d91-44ba-9320-a97846cb132d" target="_blank" rel="noopener">
-        <span class="row-title">Stratégie de contenu</span>
-        <span class="row-sub">Savoir quoi publier pour attirer la bonne audience.</span>
-      </a>
-      <a class="group-row" href="https://stan.store/affiliates/96a5a319-0142-4e64-b319-738e9e17477d" target="_blank" rel="noopener">
-        <span class="row-title">Vendre grâce aux stories</span>
-        <span class="row-sub">Créer des stories qui donnent envie de passer à l'action.</span>
-      </a>
-      <a class="group-row" href="https://stan.store/affiliates/f5ab30f4-fe73-44f1-906f-d9b87f8b2d1d" target="_blank" rel="noopener">
-        <span class="row-title">Attirer sans se montrer</span>
-        <span class="row-sub">Développer une présence magnétique en ligne.</span>
-      </a>
-    </div>
+    <button class="btn ghost" id="quiz-open" type="button">La DMO est-elle faite pour moi ? Faire le test (2 min)</button>
 
-    <a class="link-card" data-link-id="systeme-io" href="https://systeme.io/fr?sa=sa0270402567107c52bf3362c98c05093eec95329a" target="_blank" rel="noopener">
-      <span class="link-art" aria-hidden="true">
-        <svg viewBox="0 0 48 48"><path d="M9 11 L39 11 L28 24 L28 36 L20 36 L20 24 Z" fill="var(--sand)" opacity="0.4" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/><circle cx="24" cy="41" r="1.8" fill="var(--periwinkle)"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Systeme.io <span class="free-tag">· gratuit</span></span>
-        <span class="link-sub">Créer son site et ses pages de vente.</span>
-      </span>
-    </a>
+    <section class="quiz" id="quiz" aria-live="polite" hidden>
+      <h2 class="quiz-title">La DMO est-elle faite pour toi ?</h2>
+      <p class="quiz-sub">Tu hésites encore et tu ne sais pas si cette formation correspond à tes besoins ? Réponds à quelques questions pour faire le point tranquillement, sans pression.</p>
+      <div id="quiz-body"></div>
+    </section>
 
-    <p class="category">Spiritualité</p>
-    <p class="category-sub">Apprendre et cheminer dans sa foi.</p>
-
-    <a class="link-card" data-link-id="al-madrassa" href="https://almadrassa.fr/?r=617" target="_blank" rel="noopener">
-      <span class="link-art" aria-hidden="true">
-        <svg viewBox="0 0 48 48"><path d="M24 14 C 19 11 12 11 9 13 L9 36 C12 34 19 34 24 37 C29 34 36 34 39 36 L39 13 C36 11 29 11 24 14 Z" fill="var(--sand)" opacity="0.4" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/><path d="M24 14 L24 37" stroke="var(--accent)" stroke-width="1.4"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Al Madrassa</span>
-        <span class="link-sub">Apprendre l'arabe et les sciences religieuses.</span>
-      </span>
-    </a>
-
-    <a class="link-card" data-link-id="objectif-omra" href="https://www.joharalamarty.com/objectifomra?sa=sa0270402567107c52bf3362c98c05093eec95329a" target="_blank" rel="noopener">
-      <span class="link-art" aria-hidden="true">
-        <svg viewBox="0 0 48 48"><path d="M24 7 L40 15 L24 23 L8 15 Z" fill="var(--sand)" opacity="0.55" stroke="var(--accent)" stroke-width="1.2" stroke-linejoin="round"/><path d="M8 15 L24 23 L24 41 L8 33 Z" fill="var(--accent)" opacity="0.88" stroke="var(--accent)" stroke-width="1" stroke-linejoin="round"/><path d="M40 15 L24 23 L24 41 L40 33 Z" fill="var(--accent)" opacity="0.62" stroke="var(--accent)" stroke-width="1" stroke-linejoin="round"/><path d="M8 21.3 L24 29.3 L24 32 L8 24 Z" fill="var(--gold)"/><path d="M24 29.3 L40 21.3 L40 24 L24 32 Z" fill="var(--gold)" opacity="0.85"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Objectif Omra — Johara Lamarty</span>
-        <span class="link-sub">Préparer sa Omra sereinement, sans agence.</span>
-      </span>
-    </a>
-
-    <a class="link-card" data-link-id="99-noms" href="https://soum2601.github.io/noms-allah/" target="_blank" rel="noopener">
-      <span class="link-art" aria-hidden="true">
-        <span class="art-allah" lang="ar" dir="rtl">الله</span>
-      </span>
-      <span class="link-text">
-        <span class="link-title">Les 99 noms d'Allah</span>
-        <span class="link-sub">Cartes et quiz pour les apprendre.</span>
-      </span>
-    </a>
+    <a class="dm-btn" href="https://ig.me/m/objectif.falah" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.4-.7L3.5 21l1.9-4.6A8.3 8.3 0 0 1 3.9 11.5C3.9 6.8 7.6 3 12.4 3A8.5 8.5 0 0 1 21 11.5z"/></svg><span>Me poser une question en DM</span></a>
 
   </nav>
 
   <footer>
-    <p class="disclosure">Certains liens sont affiliés : je peux percevoir une commission, sans surcoût pour toi.</p>
+    
   </footer>
 
+<script>
+(function(){
+var DM="https://ig.me/m/objectif.falah", DMO="https://www.joharalamarty.com/dmoformation?sa=sa0270402567107c52bf3362c98c05093eec95329a";
+var Q=[
+ {q:"Où en es-tu actuellement dans ton projet en ligne ?",o:[
+  ["J'aimerais me lancer, mais je ne sais pas par où commencer.",""],
+  ["J'aimerais développer une activité en ligne, mais je ne sais pas encore quoi proposer.",""],
+  ["J'ai déjà commencé, mais j'aimerais développer mes compétences.",""],
+  ["J'ai déjà quelques connaissances et je souhaite aller plus loin.",""]]},
+ {q:"Qu'aimerais-tu principalement trouver dans une formation comme la DMO ?",o:[
+  ["De la clarté pour trouver ma direction et mon idée de projet.",""],
+  ["Des compétences concrètes pour créer et vendre en ligne.",""],
+  ["Plusieurs possibilités pour développer mon activité : affiliation, ebook, formation, prestations.",""],
+  ["Travailler mon mindset, ma confiance et ma vision entrepreneuriale.","mindset"]]},
+ {q:"Quel type d'accompagnement t'aiderait le plus à avancer ?",o:[
+  ["Des modules vidéo que je peux suivre à mon rythme.",""],
+  ["Une communauté avec laquelle échanger, poser mes questions et apprendre.",""],
+  ["Des challenges et une dynamique de groupe pour me motiver.","groupe"],
+  ["Un accompagnement individuel personnalisé, avec quelqu'un qui me guide personnellement.","indiv"]]},
+ {q:"Qu'attends-tu principalement de cette formation ?",o:[
+  ["Apprendre et construire mon projet progressivement.",""],
+  ["Trouver des pistes concrètes et passer à l'action.",""],
+  ["Obtenir des ressources pour développer un projet que j'ai déjà commencé.",""],
+  ["Une solution rapide pour gagner de l'argent et quitter mon emploi.","rapide"]]},
+ {q:"Quand tu apprends quelque chose, tu fais quoi ?",o:[
+  ["J'ai envie d'apprendre et d'appliquer progressivement.",""],
+  ["Je veux d'abord me faire une idée, je verrai pour appliquer.","idee"],
+  ["Je veux surtout regarder les contenus, sans forcément appliquer.","regarder"]]}
+];
+var i=0,tags=[];
+var body=document.getElementById("quiz-body");
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
+function link(href,cls,txt){var a=el("a",cls,txt);a.href=href;a.target="_blank";a.rel="noopener";return a}
+function has(k){return tags.indexOf(k)>-1}
+function ask(){
+ body.textContent="";
+ body.appendChild(el("p","quiz-step","Question "+(i+1)+" sur "+Q.length));
+ body.appendChild(el("p","quiz-q",Q[i].q));
+ var s=el("div","quiz-opts");
+ Q[i].o.forEach(function(o){
+  var b=el("button","btn",o[0]);b.type="button";
+  b.onclick=function(){tags.push(o[1]);i++;i<Q.length?ask():result()};
+  s.appendChild(b)});
+ body.appendChild(s)}
+function result(){
+ body.textContent="";
+ var r=el("div","quiz-result quiz-actions");
+ var no=has("rapide")||has("regarder");
+ var think=!no&&has("indiv")&&has("idee");
+ if(no){
+  r.appendChild(el("h3","quiz-result-title","Pas pour le moment"));
+  r.appendChild(el("p","","Pour l'instant, ce que tu cherches ne correspond pas vraiment à ce que propose la DMO."));
+  if(has("rapide"))r.appendChild(el("p","","Elle ne garantit pas de revenus rapides, et elle demande de l'implication et du travail personnel."));
+  if(has("regarder"))r.appendChild(el("p","","Elle prend tout son sens quand on met en pratique ce qu'on apprend, pas seulement quand on regarde les contenus."));
+  r.appendChild(el("p","","Ce n'est pas un échec : ce n'est simplement pas le bon moment. Tu pourras y revenir plus tard. Si tu veux en parler, écris-moi."));
+  r.appendChild(link(DM,"btn primary","M'écrire en DM"));
+ }else if(think){
+  r.appendChild(el("h3","quiz-result-title","À réfléchir avant de décider"));
+  r.appendChild(el("p","","Tu hésites, et c'est normal. Prends ton temps."));
+  r.appendChild(el("p","","La DMO est une formation autonome : plus de 20 modules vidéo à suivre à ton rythme, avec un accès à vie, et une communauté pour échanger. Elle ne comprend pas de coaching individuel approfondi. Johara propose un accompagnement à part, que tu peux découvrir directement auprès d'elle."));
+  if(has("mindset"))r.appendChild(el("p","","Tu veux travailler ton mindset : la DMO a un module dédié, « Mindset entrepreneur musulman ». Plusieurs vidéos pour renforcer ton tawakkul et travailler ce qui peut te freiner, comme la peur d'échouer ou le syndrome de l'imposteur, afin d'avancer."));
+  r.appendChild(el("p","","Si tu as des questions avant de te décider, écris-moi en DM. Rien ne presse."));
+  r.appendChild(link(DM,"btn primary","Me poser mes questions en DM"));
+  r.appendChild(link(DMO,"btn ghost","Voir la présentation de la DMO"));
+ }else{
+  r.appendChild(el("h3","quiz-result-title","Ça a l'air de correspondre"));
+  r.appendChild(el("p","","D'après tes réponses, la DMO peut t'apporter des connaissances variées (plus de 20 modules vidéo), des pistes pour construire ou développer ton activité, un rythme à toi avec un accès à vie, et une communauté de plus de 1 000 membres pour échanger et avancer."));
+  if(has("indiv"))r.appendChild(el("p","","Tu as parlé d'un accompagnement individuel : la DMO est une formation autonome, sans coaching individuel approfondi. Johara propose un accompagnement à part, que tu peux découvrir directement auprès d'elle."));
+  if(has("idee"))r.appendChild(el("p","","Tu veux d'abord te faire une idée : la présentation te permet de le faire tranquillement."));
+  if(has("groupe"))r.appendChild(el("p","","Tu aimes avancer en groupe : dans la DMO, il y a une communauté de femmes qui s'entraident et se conseillent. Les challenges ne sont pas toujours ouverts : Johara les lance quand elle le souhaite."));
+  if(has("mindset"))r.appendChild(el("p","","Tu veux travailler ton mindset : la DMO a un module dédié, « Mindset entrepreneur musulman ». Plusieurs vidéos pour renforcer ton tawakkul et travailler ce qui peut te freiner, comme la peur d'échouer ou le syndrome de l'imposteur, afin d'avancer."));
+  
+  r.appendChild(el("p","","Tu peux découvrir la présentation complète, avec le contenu, les avis, le tarif et les modalités de paiement, avant de décider."));
+  r.appendChild(link(DMO,"btn primary","Découvrir la présentation de la DMO"));
+  r.appendChild(link(DM,"btn ghost","J'ai une question avant"));
+ }
+ var re=el("button","quiz-restart","Refaire le test");re.type="button";
+ re.onclick=function(){i=0;tags=[];ask()};
+ r.appendChild(re);body.appendChild(r)}
+document.getElementById("quiz-open").onclick=function(){this.hidden=true;document.getElementById("quiz").hidden=false;ask()};
+})();
+</script>
 </div>
 </body>
 </html>
